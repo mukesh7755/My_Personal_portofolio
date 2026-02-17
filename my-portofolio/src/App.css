@@ -1,0 +1,112 @@
+/* --- Global Base Styling --- */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0c0c1d;
+  color: hsl(0, 0%, 94%);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* --- Section Title --- */
+section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00d4ff;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* --- Container Utility --- */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* --- Buttons --- */
+.btn {
+  background: linear-gradient(135deg, #00d4ff, #3a0ca3);
+  color: white;
+  padding: 12px 28px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4);
+}
+
+/* --- Card Style --- */
+.card {
+  background: #161629;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 212, 255, 0.2);
+}
+
+/* --- Animation --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Section Divider --- */
+.divider {
+  height: 2px;
+  width: 120px;
+  background: #00d4ff;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 10px 22px;
+  }
+}
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

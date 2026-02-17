@@ -1,0 +1,97 @@
+/* src/components/Projects.css */
+.projects-section {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+  color: #fff;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #00ffff;
+  text-shadow: 0 0 8px #0ff;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-card {
+  background: #1e293b;
+  border-radius: 15px;
+  width: 300px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 30px rgba(0, 255, 255, 0.1);
+  border: 2px solid #00ffff44;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 40px rgba(0, 255, 255, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.project-content h3 {
+  color: #00ffff;
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.project-links a {
+  margin-right: 12px;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #ffffff;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card:hover,
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.2);
+}
+.project-image {
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.08);
+}
