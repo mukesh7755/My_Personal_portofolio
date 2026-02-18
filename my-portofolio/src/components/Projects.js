@@ -2,40 +2,40 @@
 import React from "react";
 import "./Projects.css";
 
-import chatbotMusic from "../assets/chatbot_music.png";
+import stockImage from "../assets/stock.png"; // ✅ Using stock.png
 import financeImage from "../assets/finaccne.png";
 import certImage from "../assets/certtfi.png";
-import pollImage from "../assets/polls.png"; // ✅ Added
+import pollImage from "../assets/polls.png";
 
 const projects = [
   {
-    title: "Chatbot Music Recommender",
+    title: "Stock Price Forecasting",
     description:
-      "Mood-based music suggestion system built with Django and MySQL.",
-    image: chatbotMusic,
-    live: "https://your-chatbot-project.com",
-    github: "https://github.com/yourusername/chatbot-music-recommender",
+      "Built an LSTM-based stock price prediction system using Python, TensorFlow, and Streamlit. Includes historical data visualization, real-time trend analysis, and future price forecasting.",
+    image: stockImage,
+    live: "https://mukesh7755-stock-price-forecasting-app-wlrv5m.streamlit.app/",
+    github: "https://github.com/mukesh7755/Stock-Price-Forecasting",
   },
   {
     title: "AI Certificate Generator",
     description:
-      "Generates auto-personalized certificates using GenAI, React, and Flask.",
+      "Generates AI-personalized certificates using React, Flask, and GenAI APIs. Includes QR verification, dynamic PDF export, and real-time preview customization.",
     image: certImage,
     live: "https://ai-certificate-generator-flax.vercel.app/",
-    github: "https://github.com/mukeshcodi998/ai-powered-certificate-generator",
+    github: "https://github.com/mukesh7755/ai-certificate-generator",
   },
   {
     title: "Personal Finance Tracker",
     description:
-      "Smart and visual way to track income & expenses using React + Charts.js.",
+      "A smart financial management app built with React and Charts.js to track income, expenses, visual analytics, and downloadable reports.",
     image: financeImage,
     live: "https://finance-tracker-inky-two.vercel.app/",
     github: "https://github.com/mukesh7755/Finance_tracker",
   },
   {
-    title: "Real-Time Poll Rooms", // ✅ New Project
+    title: "Real-Time Poll Rooms",
     description:
-      "Create live polls with real-time voting updates, countdown timer, expiry system, and anti-abuse mechanisms using React, Node.js, Socket.io, and MongoDB.",
+      "Create live polls with real-time voting updates using React, Node.js, Socket.io, and MongoDB. Includes countdown timer, expiry system, and anti-abuse mechanisms.",
     image: pollImage,
     live: "https://realtime-poll-rooms-sandy.vercel.app/",
     github: "https://github.com/mukesh7755/realtime-poll-rooms",
